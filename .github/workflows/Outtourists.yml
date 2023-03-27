@@ -17,6 +17,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ github.event.release.upload_url }}
-          asset_path: C:/WORK/OCRProject/WB_OutTourists.xlsx
+          asset_path: ./WB_OutTourists.xlsx
           asset_name: WB_OutTourists-${{ github.event.release.tag_name }}.xlsx
           asset_content_type: application/zip
